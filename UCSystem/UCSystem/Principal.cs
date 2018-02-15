@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace UCSystem
 {
@@ -24,6 +25,31 @@ namespace UCSystem
             {
                 this.Close();
             }
+        }
+
+        private void participantesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            participantes abrir = new participantes();
+            abrir.Show();
+              
+        }
+
+        private void equiposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            equipos abrir = new equipos();
+            abrir.Show();
+        }
+
+        private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            empleado abrir = new empleado();
+            abrir.Show();
+        }
+
+        private void participantesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            consultaparticipante on = new consultaparticipante();
+            on.Show();
         }
     }
 }
