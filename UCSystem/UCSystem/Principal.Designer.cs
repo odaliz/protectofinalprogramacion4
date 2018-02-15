@@ -95,6 +95,7 @@
             // 
             // participantesToolStripMenuItem
             // 
+            this.participantesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("participantesToolStripMenuItem.Image")));
             this.participantesToolStripMenuItem.Name = "participantesToolStripMenuItem";
             this.participantesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.participantesToolStripMenuItem.Text = "Participantes";

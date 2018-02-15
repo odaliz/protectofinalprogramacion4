@@ -1,7 +1,4 @@
-CREATE DATABASE UCSystem_SQLServerDB
-GO
-
-USE UCSystem_SQLServerDB;
+USE UCSystem_SQLServer
 GO
 
 CREATE TABLE participantes
@@ -72,6 +69,3 @@ FOREIGN KEY (codigoempleado) REFERENCES empleados (codigoempleado),
 FOREIGN KEY (idtipousuario) REFERENCES tiposusuarios (idtipousuario),
 FOREIGN KEY (idestado) REFERENCES estados (idestado))
 GO
-
-
-
