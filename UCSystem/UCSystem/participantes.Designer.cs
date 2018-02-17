@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(participantes));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtcedulap = new System.Windows.Forms.TextBox();
-            this.Label7 = new System.Windows.Forms.Label();
-            this.txtdireccionp = new System.Windows.Forms.TextBox();
             this.txtapellidop = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtnombrep = new System.Windows.Forms.TextBox();
             this.Label6 = new System.Windows.Forms.Label();
+            this.txtcedulap = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
             this.txtmatricula = new System.Windows.Forms.TextBox();
             this.Label1 = new System.Windows.Forms.Label();
+            this.Label7 = new System.Windows.Forms.Label();
+            this.txtdireccionp = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -68,6 +68,13 @@
             this.groupBox2.Text = "Registro participantes";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
+            // txtapellidop
+            // 
+            this.txtapellidop.Location = new System.Drawing.Point(57, 75);
+            this.txtapellidop.Name = "txtapellidop";
+            this.txtapellidop.Size = new System.Drawing.Size(219, 20);
+            this.txtapellidop.TabIndex = 173;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -76,38 +83,6 @@
             this.label8.Size = new System.Drawing.Size(40, 13);
             this.label8.TabIndex = 152;
             this.label8.Text = "Cedula";
-            // 
-            // txtcedulap
-            // 
-            this.txtcedulap.Location = new System.Drawing.Point(367, 27);
-            this.txtcedulap.MaxLength = 15;
-            this.txtcedulap.Name = "txtcedulap";
-            this.txtcedulap.Size = new System.Drawing.Size(219, 20);
-            this.txtcedulap.TabIndex = 151;
-            // 
-            // Label7
-            // 
-            this.Label7.AutoSize = true;
-            this.Label7.Location = new System.Drawing.Point(309, 82);
-            this.Label7.Name = "Label7";
-            this.Label7.Size = new System.Drawing.Size(52, 13);
-            this.Label7.TabIndex = 157;
-            this.Label7.Text = "Direccion";
-            // 
-            // txtdireccionp
-            // 
-            this.txtdireccionp.Location = new System.Drawing.Point(367, 75);
-            this.txtdireccionp.MaxLength = 10;
-            this.txtdireccionp.Name = "txtdireccionp";
-            this.txtdireccionp.Size = new System.Drawing.Size(219, 20);
-            this.txtdireccionp.TabIndex = 161;
-            // 
-            // txtapellidop
-            // 
-            this.txtapellidop.Location = new System.Drawing.Point(57, 75);
-            this.txtapellidop.Name = "txtapellidop";
-            this.txtapellidop.Size = new System.Drawing.Size(219, 20);
-            this.txtapellidop.TabIndex = 173;
             // 
             // txtnombrep
             // 
@@ -124,6 +99,14 @@
             this.Label6.Size = new System.Drawing.Size(44, 13);
             this.Label6.TabIndex = 168;
             this.Label6.Text = "Apellido";
+            // 
+            // txtcedulap
+            // 
+            this.txtcedulap.Location = new System.Drawing.Point(367, 27);
+            this.txtcedulap.MaxLength = 15;
+            this.txtcedulap.Name = "txtcedulap";
+            this.txtcedulap.Size = new System.Drawing.Size(219, 20);
+            this.txtcedulap.TabIndex = 151;
             // 
             // Label2
             // 
@@ -152,6 +135,23 @@
             this.Label1.TabIndex = 170;
             this.Label1.Text = "Matricula";
             // 
+            // Label7
+            // 
+            this.Label7.AutoSize = true;
+            this.Label7.Location = new System.Drawing.Point(309, 82);
+            this.Label7.Name = "Label7";
+            this.Label7.Size = new System.Drawing.Size(52, 13);
+            this.Label7.TabIndex = 157;
+            this.Label7.Text = "Direccion";
+            // 
+            // txtdireccionp
+            // 
+            this.txtdireccionp.Location = new System.Drawing.Point(367, 75);
+            this.txtdireccionp.MaxLength = 10;
+            this.txtdireccionp.Name = "txtdireccionp";
+            this.txtdireccionp.Size = new System.Drawing.Size(219, 20);
+            this.txtdireccionp.TabIndex = 161;
+            // 
             // button6
             // 
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
@@ -175,6 +175,7 @@
             this.button5.Text = "Salir";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -199,6 +200,7 @@
             this.button3.Text = "Insertar";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -211,6 +213,7 @@
             this.button2.Text = "Nuevo";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // participantes
             // 

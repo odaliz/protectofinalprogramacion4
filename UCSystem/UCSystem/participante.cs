@@ -8,21 +8,21 @@ using System.Data.SqlClient;
 
 namespace claseparticipante
 {
-   class participante
+   public class participante
 
     {
-        public SqlConnection conex = new SqlConnection(@"Server=SERVERMIT2\SQLEXPRESS;Database=Universidad;Trusted_Connection=True;");
+        public SqlConnection con = new SqlConnection("Data Source = LAPTOP-TFN0CEGQ\\SQLEXPRESS01; Initial Catalog = participante; Integrated Security = True");
+        
+       // public void ejecutarsql(string strsql)
 
-        public void ejecutarsql(string strsql)
 
-{
 
-    SqlCommand con = new SqlCommand(strsql, conex);
-            con.CommandType = System.Data.CommandType.Text;
-            conex.Open();
-            con.ExecuteNonQuery();
-            con.Connection.Close();
-            conex.Close();
+    //SqlCommand con = new SqlCommand(strsql, conex);
+    //        con.CommandType = System.Data.CommandType.Text;
+    //        conex.Open();
+    //        con.ExecuteNonQuery();
+    //        con.Connection.Close();
+    //        conex.Close();
 
 
 
@@ -35,5 +35,4 @@ namespace claseparticipante
 
 
     }
-}
 }

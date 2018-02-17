@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(equipos));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Label2 = new System.Windows.Forms.Label();
             this.txtcodigo = new System.Windows.Forms.TextBox();
+            this.txtcliente = new System.Windows.Forms.TextBox();
             this.Label1 = new System.Windows.Forms.Label();
+            this.Label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.txtcliente = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -57,16 +57,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Equipos";
             // 
-            // Label2
-            // 
-            this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(7, 50);
-            this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(66, 13);
-            this.Label2.TabIndex = 169;
-            this.Label2.Text = "Descripción ";
-            this.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // txtcodigo
             // 
             this.txtcodigo.Enabled = false;
@@ -74,6 +64,13 @@
             this.txtcodigo.Name = "txtcodigo";
             this.txtcodigo.Size = new System.Drawing.Size(148, 20);
             this.txtcodigo.TabIndex = 171;
+            // 
+            // txtcliente
+            // 
+            this.txtcliente.Location = new System.Drawing.Point(79, 50);
+            this.txtcliente.Name = "txtcliente";
+            this.txtcliente.Size = new System.Drawing.Size(148, 20);
+            this.txtcliente.TabIndex = 172;
             // 
             // Label1
             // 
@@ -83,6 +80,16 @@
             this.Label1.Size = new System.Drawing.Size(54, 13);
             this.Label1.TabIndex = 170;
             this.Label1.Text = "ID Equipo";
+            // 
+            // Label2
+            // 
+            this.Label2.AutoSize = true;
+            this.Label2.Location = new System.Drawing.Point(7, 50);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(66, 13);
+            this.Label2.TabIndex = 169;
+            this.Label2.Text = "Descripción ";
+            this.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox1
             // 
@@ -145,6 +152,7 @@
             this.button3.Text = "Insertar";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -157,13 +165,7 @@
             this.button2.Text = "Nuevo";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // txtcliente
-            // 
-            this.txtcliente.Location = new System.Drawing.Point(79, 50);
-            this.txtcliente.Name = "txtcliente";
-            this.txtcliente.Size = new System.Drawing.Size(148, 20);
-            this.txtcliente.TabIndex = 172;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // equipos
             // 
