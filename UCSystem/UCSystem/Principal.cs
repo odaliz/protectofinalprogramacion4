@@ -20,7 +20,7 @@ namespace UCSystem
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DialogResult Result = MessageBox.Show("Seguro que desea salir del sistema", "Saliendo del sistema", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            DialogResult Result = MessageBox.Show("Seguro que desea salir del sistema", "Saliendo del sistema - UCSystem", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (Result == DialogResult.OK)
             {
                 this.Close();

@@ -116,20 +116,20 @@
             // participantesToolStripMenuItem1
             // 
             this.participantesToolStripMenuItem1.Name = "participantesToolStripMenuItem1";
-            this.participantesToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.participantesToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
             this.participantesToolStripMenuItem1.Text = "Participantes";
             this.participantesToolStripMenuItem1.Click += new System.EventHandler(this.participantesToolStripMenuItem1_Click);
             // 
             // equiposToolStripMenuItem1
             // 
             this.equiposToolStripMenuItem1.Name = "equiposToolStripMenuItem1";
-            this.equiposToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.equiposToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
             this.equiposToolStripMenuItem1.Text = "Equipos";
             // 
             // empleadosToolStripMenuItem1
             // 
             this.empleadosToolStripMenuItem1.Name = "empleadosToolStripMenuItem1";
-            this.empleadosToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.empleadosToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
             this.empleadosToolStripMenuItem1.Text = "Empleados";
             // 
             // salirToolStripMenuItem
