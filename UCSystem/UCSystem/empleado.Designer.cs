@@ -1,6 +1,6 @@
 ﻿namespace UCSystem
 {
-    partial class empleado
+    partial class Empleado
     {
         /// <summary>
         /// Required designer variable.
@@ -28,108 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(empleado));
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empleado));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cmb = new System.Windows.Forms.ComboBox();
+            this.level = new System.Windows.Forms.Label();
+            this.txtcodigoemple = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txtapellidoem = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtnombreem = new System.Windows.Forms.TextBox();
             this.Label6 = new System.Windows.Forms.Label();
             this.txtcedulaem = new System.Windows.Forms.TextBox();
             this.Label2 = new System.Windows.Forms.Label();
-            this.txtcodigoem = new System.Windows.Forms.TextBox();
-            this.Label1 = new System.Windows.Forms.Label();
             this.Label7 = new System.Windows.Forms.Label();
             this.txtdireccionem = new System.Windows.Forms.TextBox();
+            this.btnlimpiar = new System.Windows.Forms.Button();
+            this.btnsalir = new System.Windows.Forms.Button();
+            this.btngualdar = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button6
-            // 
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(273, 143);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(111, 52);
-            this.button6.TabIndex = 178;
-            this.button6.Text = "Modificar";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(561, 143);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(111, 52);
-            this.button5.TabIndex = 177;
-            this.button5.Text = "Salir";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(405, 143);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(115, 52);
-            this.button4.TabIndex = 176;
-            this.button4.Text = "Eliminar";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(137, 143);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 52);
-            this.button3.TabIndex = 175;
-            this.button3.Text = "Insertar";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(5, 143);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 52);
-            this.button2.TabIndex = 174;
-            this.button2.Text = "Nuevo";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.cmb);
+            this.groupBox2.Controls.Add(this.level);
+            this.groupBox2.Controls.Add(this.txtcodigoemple);
+            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtapellidoem);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.txtnombreem);
             this.groupBox2.Controls.Add(this.Label6);
             this.groupBox2.Controls.Add(this.txtcedulaem);
             this.groupBox2.Controls.Add(this.Label2);
-            this.groupBox2.Controls.Add(this.txtcodigoem);
-            this.groupBox2.Controls.Add(this.Label1);
             this.groupBox2.Controls.Add(this.Label7);
             this.groupBox2.Controls.Add(this.txtdireccionem);
             this.groupBox2.Location = new System.Drawing.Point(1, 1);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(765, 124);
+            this.groupBox2.Size = new System.Drawing.Size(763, 145);
             this.groupBox2.TabIndex = 173;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Registro Empleados";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // cmb
+            // 
+            this.cmb.FormattingEnabled = true;
+            this.cmb.Items.AddRange(new object[] {
+            "Limpieza",
+            "ejemplo1",
+            "ejemplo2 ",
+            "ejemplo3"});
+            this.cmb.Location = new System.Drawing.Point(494, 93);
+            this.cmb.Name = "cmb";
+            this.cmb.Size = new System.Drawing.Size(219, 21);
+            this.cmb.TabIndex = 177;
+            // 
+            // level
+            // 
+            this.level.AutoSize = true;
+            this.level.Location = new System.Drawing.Point(423, 98);
+            this.level.Name = "level";
+            this.level.Size = new System.Drawing.Size(35, 13);
+            this.level.TabIndex = 177;
+            this.level.Text = "Cargo";
+            // 
+            // txtcodigoemple
+            // 
+            this.txtcodigoemple.Location = new System.Drawing.Point(95, 26);
+            this.txtcodigoemple.Name = "txtcodigoemple";
+            this.txtcodigoemple.Size = new System.Drawing.Size(219, 20);
+            this.txtcodigoemple.TabIndex = 178;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 13);
+            this.label1.TabIndex = 177;
+            this.label1.Text = "codigo empleado";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtapellidoem
             // 
-            this.txtapellidoem.Location = new System.Drawing.Point(57, 75);
+            this.txtapellidoem.Location = new System.Drawing.Point(95, 98);
             this.txtapellidoem.Name = "txtapellidoem";
             this.txtapellidoem.Size = new System.Drawing.Size(219, 20);
             this.txtapellidoem.TabIndex = 173;
@@ -137,7 +119,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(321, 34);
+            this.label8.Location = new System.Drawing.Point(423, 13);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(40, 13);
             this.label8.TabIndex = 152;
@@ -145,7 +127,7 @@
             // 
             // txtnombreem
             // 
-            this.txtnombreem.Location = new System.Drawing.Point(57, 47);
+            this.txtnombreem.Location = new System.Drawing.Point(95, 54);
             this.txtnombreem.Name = "txtnombreem";
             this.txtnombreem.Size = new System.Drawing.Size(219, 20);
             this.txtnombreem.TabIndex = 172;
@@ -161,7 +143,7 @@
             // 
             // txtcedulaem
             // 
-            this.txtcedulaem.Location = new System.Drawing.Point(367, 27);
+            this.txtcedulaem.Location = new System.Drawing.Point(494, 13);
             this.txtcedulaem.MaxLength = 15;
             this.txtcedulaem.Name = "txtcedulaem";
             this.txtcedulaem.Size = new System.Drawing.Size(219, 20);
@@ -177,27 +159,10 @@
             this.Label2.Text = "Nombre";
             this.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // txtcodigoem
-            // 
-            this.txtcodigoem.Enabled = false;
-            this.txtcodigoem.Location = new System.Drawing.Point(57, 24);
-            this.txtcodigoem.Name = "txtcodigoem";
-            this.txtcodigoem.Size = new System.Drawing.Size(219, 20);
-            this.txtcodigoem.TabIndex = 171;
-            // 
-            // Label1
-            // 
-            this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(1, 27);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(40, 13);
-            this.Label1.TabIndex = 170;
-            this.Label1.Text = "Codigo";
-            // 
             // Label7
             // 
             this.Label7.AutoSize = true;
-            this.Label7.Location = new System.Drawing.Point(309, 82);
+            this.Label7.Location = new System.Drawing.Point(423, 54);
             this.Label7.Name = "Label7";
             this.Label7.Size = new System.Drawing.Size(52, 13);
             this.Label7.TabIndex = 157;
@@ -205,24 +170,60 @@
             // 
             // txtdireccionem
             // 
-            this.txtdireccionem.Location = new System.Drawing.Point(367, 75);
+            this.txtdireccionem.Location = new System.Drawing.Point(494, 51);
             this.txtdireccionem.MaxLength = 10;
             this.txtdireccionem.Name = "txtdireccionem";
             this.txtdireccionem.Size = new System.Drawing.Size(219, 20);
             this.txtdireccionem.TabIndex = 161;
             // 
-            // empleado
+            // btnlimpiar
+            // 
+            this.btnlimpiar.Image = ((System.Drawing.Image)(resources.GetObject("btnlimpiar.Image")));
+            this.btnlimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnlimpiar.Location = new System.Drawing.Point(283, 152);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(111, 52);
+            this.btnlimpiar.TabIndex = 176;
+            this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnlimpiar.UseVisualStyleBackColor = true;
+            this.btnlimpiar.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // btnsalir
+            // 
+            this.btnsalir.Image = ((System.Drawing.Image)(resources.GetObject("btnsalir.Image")));
+            this.btnsalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnsalir.Location = new System.Drawing.Point(495, 152);
+            this.btnsalir.Name = "btnsalir";
+            this.btnsalir.Size = new System.Drawing.Size(111, 52);
+            this.btnsalir.TabIndex = 175;
+            this.btnsalir.Text = "Salir";
+            this.btnsalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnsalir.UseVisualStyleBackColor = true;
+            this.btnsalir.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // btngualdar
+            // 
+            this.btngualdar.Image = ((System.Drawing.Image)(resources.GetObject("btngualdar.Image")));
+            this.btngualdar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btngualdar.Location = new System.Drawing.Point(67, 152);
+            this.btngualdar.Name = "btngualdar";
+            this.btngualdar.Size = new System.Drawing.Size(113, 52);
+            this.btngualdar.TabIndex = 174;
+            this.btngualdar.Text = "Guardar";
+            this.btngualdar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btngualdar.UseVisualStyleBackColor = true;
+            // 
+            // Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(776, 373);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnlimpiar);
             this.Controls.Add(this.groupBox2);
-            this.Name = "empleado";
+            this.Controls.Add(this.btnsalir);
+            this.Controls.Add(this.btngualdar);
+            this.Name = "Empleado";
             this.Text = "empleado";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -231,12 +232,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox2;
         internal System.Windows.Forms.TextBox txtapellidoem;
         internal System.Windows.Forms.Label label8;
@@ -244,9 +239,14 @@
         internal System.Windows.Forms.Label Label6;
         internal System.Windows.Forms.TextBox txtcedulaem;
         internal System.Windows.Forms.Label Label2;
-        internal System.Windows.Forms.TextBox txtcodigoem;
-        internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.Label Label7;
         internal System.Windows.Forms.TextBox txtdireccionem;
+        private System.Windows.Forms.Button btnlimpiar;
+        private System.Windows.Forms.Button btnsalir;
+        private System.Windows.Forms.Button btngualdar;
+        internal System.Windows.Forms.TextBox txtcodigoemple;
+        internal System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmb;
+        internal System.Windows.Forms.Label level;
     }
 }

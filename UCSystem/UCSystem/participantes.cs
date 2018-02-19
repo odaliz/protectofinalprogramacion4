@@ -37,7 +37,7 @@ namespace UCSystem
             con.Open();
             SqlCommand cmd =  con.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Insert Into participantes values('" + txtmatricula.Text + "', ' " + txtnombrep.Text + "', ' " + txtapellidop.Text + "',  ' " + txtdireccionp.Text + "', ' " + txtcedulap.Text + "')";
+            cmd.CommandText = "Insert Into participantes values('" + txtmatriculap.Text + "', ' " + txtnombrep.Text + "', ' " + txtapellidop.Text + "',  ' " + txtcedulap.Text + "', ' " + txtdireccionp.Text + "')";
             cmd.ExecuteNonQuery();
             con.Close();
 
@@ -48,6 +48,15 @@ namespace UCSystem
         private void button5_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            txtapellidop.Text = "";
+            txtcedulap.Text = "";
+            txtdireccionp.Text = "";
+            txtmatriculap.Text = "";
+            txtnombrep.Text = "";
         }
     }
 }

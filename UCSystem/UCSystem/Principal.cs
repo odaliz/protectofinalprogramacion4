@@ -42,7 +42,7 @@ namespace UCSystem
 
         private void empleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            empleado abrir = new empleado();
+            Empleado abrir = new Empleado();
             abrir.Show();
         }
 
