@@ -48,6 +48,18 @@
   <ItemGroup>
     <Compile Include="claEquipos.cs" />
     <Compile Include="claMovimientos.cs" />
+    <Compile Include="Consulta Empledados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta Empledados.Designer.cs">
+      <DependentUpon>Consulta Empledados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consulta equipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consulta equipos.Designer.cs">
+      <DependentUpon>consulta equipos.cs</DependentUpon>
+    </Compile>
     <Compile Include="consultaparticipante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Consulta Empledados.resx">
+      <DependentUpon>Consulta Empledados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consulta equipos.resx">
+      <DependentUpon>consulta equipos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="consultaparticipante.resx">
       <DependentUpon>consultaparticipante.cs</DependentUpon>
     </EmbeddedResource>

@@ -1,6 +1,6 @@
 ﻿namespace UCSystem
 {
-    partial class consultaparticipante
+    partial class consulta_equipos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dvparticipantes = new System.Windows.Forms.DataGridView();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dgvequipos = new System.Windows.Forms.DataGridView();
             this.matricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.a = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtbuscar = new System.Windows.Forms.TextBox();
             this.btnbuscar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dvparticipantes)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvequipos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dvparticipantes
+            // groupBox3
             // 
-            this.dvparticipantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvparticipantes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.groupBox3.Controls.Add(this.dgvequipos);
+            this.groupBox3.Controls.Add(this.groupBox1);
+            this.groupBox3.Location = new System.Drawing.Point(10, 19);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(1071, 554);
+            this.groupBox3.TabIndex = 170;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Consultar Equipos";
+            // 
+            // dgvequipos
+            // 
+            this.dgvequipos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvequipos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.matricula,
             this.nombre,
             this.a,
             this.Column1,
             this.Column2});
-            this.dvparticipantes.Location = new System.Drawing.Point(8, 110);
-            this.dvparticipantes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dvparticipantes.Name = "dvparticipantes";
-            this.dvparticipantes.Size = new System.Drawing.Size(1048, 404);
-            this.dvparticipantes.TabIndex = 0;
-            this.dvparticipantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvequipos.Location = new System.Drawing.Point(8, 128);
+            this.dgvequipos.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvequipos.Name = "dgvequipos";
+            this.dgvequipos.Size = new System.Drawing.Size(1055, 404);
+            this.dgvequipos.TabIndex = 0;
             // 
             // matricula
             // 
@@ -83,19 +95,6 @@
             // 
             this.Column2.HeaderText = "Direccion";
             this.Column2.Name = "Column2";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.dvparticipantes);
-            this.groupBox3.Controls.Add(this.groupBox1);
-            this.groupBox3.Location = new System.Drawing.Point(33, 14);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(1071, 541);
-            this.groupBox3.TabIndex = 169;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Consultar participante";
             // 
             // groupBox1
             // 
@@ -128,18 +127,16 @@
             this.btnbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbuscar.UseVisualStyleBackColor = true;
             // 
-            // consultaparticipante
+            // consulta_equipos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1113, 550);
+            this.ClientSize = new System.Drawing.Size(1085, 588);
             this.Controls.Add(this.groupBox3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "consultaparticipante";
-            this.Text = "consultaparticipante";
-            this.Load += new System.EventHandler(this.consultaparticipante_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dvparticipantes)).EndInit();
+            this.Name = "consulta_equipos";
+            this.Text = "consulta_equipos";
             this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvequipos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -148,13 +145,13 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dvparticipantes;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView dgvequipos;
         private System.Windows.Forms.DataGridViewTextBoxColumn matricula;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn a;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.Button btnbuscar;

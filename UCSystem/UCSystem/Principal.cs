@@ -56,5 +56,17 @@ namespace UCSystem
         {
 
         }
+
+        private void equiposToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            consulta_equipos on = new consulta_equipos();
+            on.Show();
+        }
+
+        private void empleadosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Consulta_Empledados on = new Consulta_Empledados();
+            on.Show();
+        }
     }
 }
