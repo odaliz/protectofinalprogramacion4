@@ -10,7 +10,7 @@ namespace UCSystem
 {
     public class claMovimientos
     {
-        SqlConnection con = new SqlConnection(@"Data Source =WINDOWS-TP6EBH6\\SQLEXPRESS01; Initial Catalog = UCSystem_SQLServer; Integrated Security = True;");
+        SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
         public void Guardar(claEquipos equip)
         {
             try

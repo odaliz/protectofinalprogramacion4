@@ -46,9 +46,9 @@ GO
 
 CREATE TABLE movimientosequipos
 (matricula  VARCHAR (7),
-serieequipo VARCHAR (20),
+serieequipo VARCHAR (30),
 idestado INT,
-fechaestado DATE NOT NULL,
+fechaestado VARCHAR (10) NOT NULL,
 FOREIGN KEY (matricula) REFERENCES participantes (matricula),
 FOREIGN KEY (serieequipo) REFERENCES inventario (serieequipo),
 FOREIGN KEY (idestado) REFERENCES estados (idestado))
