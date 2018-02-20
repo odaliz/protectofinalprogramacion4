@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="claEquipos.cs" />
+    <Compile Include="claMovimientos.cs" />
     <Compile Include="consultaparticipante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +65,12 @@
     </Compile>
     <Compile Include="equipos.Designer.cs">
       <DependentUpon>equipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="movimientoequipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="movimientoequipos.Designer.cs">
+      <DependentUpon>movimientoequipos.cs</DependentUpon>
     </Compile>
     <Compile Include="participante.cs" />
     <Compile Include="participantes.cs">
@@ -87,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="equipos.resx">
       <DependentUpon>equipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="movimientoequipos.resx">
+      <DependentUpon>movimientoequipos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="participantes.resx">
       <DependentUpon>participantes.cs</DependentUpon>

@@ -71,21 +71,21 @@
             // 
             this.participantesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("participantesToolStripMenuItem.Image")));
             this.participantesToolStripMenuItem.Name = "participantesToolStripMenuItem";
-            this.participantesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.participantesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.participantesToolStripMenuItem.Text = "Participantes";
             this.participantesToolStripMenuItem.Click += new System.EventHandler(this.participantesToolStripMenuItem_Click);
             // 
             // equiposToolStripMenuItem
             // 
             this.equiposToolStripMenuItem.Name = "equiposToolStripMenuItem";
-            this.equiposToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.equiposToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.equiposToolStripMenuItem.Text = "Equipos";
             this.equiposToolStripMenuItem.Click += new System.EventHandler(this.equiposToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem
             // 
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
@@ -102,6 +102,7 @@
             this.movimientosEquiposToolStripMenuItem.Name = "movimientosEquiposToolStripMenuItem";
             this.movimientosEquiposToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.movimientosEquiposToolStripMenuItem.Text = "Movimientos equipos";
+            this.movimientosEquiposToolStripMenuItem.Click += new System.EventHandler(this.movimientosEquiposToolStripMenuItem_Click);
             // 
             // consultasToolStripMenuItem
             // 

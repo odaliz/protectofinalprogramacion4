@@ -51,5 +51,10 @@ namespace UCSystem
             consultaparticipante on = new consultaparticipante();
             on.Show();
         }
+
+        private void movimientosEquiposToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
