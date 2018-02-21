@@ -142,5 +142,10 @@ namespace UCSystem
             cbEstado.Enabled = true;
             tsbGuardar.Enabled = true;
         }
+
+        private void movimientoequipos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

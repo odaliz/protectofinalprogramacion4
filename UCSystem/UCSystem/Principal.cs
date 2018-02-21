@@ -68,5 +68,10 @@ namespace UCSystem
             Consulta_Empledados on = new Consulta_Empledados();
             on.Show();
         }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
