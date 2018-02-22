@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empleado));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cmb = new System.Windows.Forms.ComboBox();
             this.level = new System.Windows.Forms.Label();
             this.txtcodigoemple = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,12 +44,13 @@
             this.btnlimpiar = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
             this.btngualdar = new System.Windows.Forms.Button();
+            this.txtidcargo = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.cmb);
+            this.groupBox2.Controls.Add(this.txtidcargo);
             this.groupBox2.Controls.Add(this.level);
             this.groupBox2.Controls.Add(this.txtcodigoemple);
             this.groupBox2.Controls.Add(this.label1);
@@ -70,27 +70,14 @@
             this.groupBox2.Text = "Registro Empleados";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // cmb
-            // 
-            this.cmb.FormattingEnabled = true;
-            this.cmb.Items.AddRange(new object[] {
-            "Limpieza",
-            "ejemplo1",
-            "ejemplo2 ",
-            "ejemplo3"});
-            this.cmb.Location = new System.Drawing.Point(494, 93);
-            this.cmb.Name = "cmb";
-            this.cmb.Size = new System.Drawing.Size(219, 21);
-            this.cmb.TabIndex = 177;
-            // 
             // level
             // 
             this.level.AutoSize = true;
             this.level.Location = new System.Drawing.Point(423, 98);
             this.level.Name = "level";
-            this.level.Size = new System.Drawing.Size(35, 13);
+            this.level.Size = new System.Drawing.Size(49, 13);
             this.level.TabIndex = 177;
-            this.level.Text = "Cargo";
+            this.level.Text = "ID Cargo";
             // 
             // txtcodigoemple
             // 
@@ -111,7 +98,7 @@
             // 
             // txtapellidoem
             // 
-            this.txtapellidoem.Location = new System.Drawing.Point(95, 98);
+            this.txtapellidoem.Location = new System.Drawing.Point(95, 91);
             this.txtapellidoem.Name = "txtapellidoem";
             this.txtapellidoem.Size = new System.Drawing.Size(219, 20);
             this.txtapellidoem.TabIndex = 173;
@@ -214,6 +201,14 @@
             this.btngualdar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btngualdar.UseVisualStyleBackColor = true;
             // 
+            // txtidcargo
+            // 
+            this.txtidcargo.Location = new System.Drawing.Point(494, 95);
+            this.txtidcargo.MaxLength = 10;
+            this.txtidcargo.Name = "txtidcargo";
+            this.txtidcargo.Size = new System.Drawing.Size(219, 20);
+            this.txtidcargo.TabIndex = 179;
+            // 
             // Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -246,7 +241,7 @@
         private System.Windows.Forms.Button btngualdar;
         internal System.Windows.Forms.TextBox txtcodigoemple;
         internal System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmb;
         internal System.Windows.Forms.Label level;
+        internal System.Windows.Forms.TextBox txtidcargo;
     }
 }

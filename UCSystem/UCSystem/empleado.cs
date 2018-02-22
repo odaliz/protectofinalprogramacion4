@@ -29,7 +29,7 @@ namespace UCSystem
             txtcodigoemple.Text = "";
             txtdireccionem.Text = "";
             txtnombreem.Text = "";
-            cmb.Text = "";
+            txtidcargo.Text = "";
 
         }
 
