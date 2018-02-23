@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empleado));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtidcargo = new System.Windows.Forms.TextBox();
             this.level = new System.Windows.Forms.Label();
             this.txtcodigoemple = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.btnlimpiar = new System.Windows.Forms.Button();
             this.btnsalir = new System.Windows.Forms.Button();
             this.btngualdar = new System.Windows.Forms.Button();
-            this.txtidcargo = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +69,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Registro Empleados";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // txtidcargo
+            // 
+            this.txtidcargo.Location = new System.Drawing.Point(494, 95);
+            this.txtidcargo.MaxLength = 10;
+            this.txtidcargo.Name = "txtidcargo";
+            this.txtidcargo.Size = new System.Drawing.Size(219, 20);
+            this.txtidcargo.TabIndex = 179;
             // 
             // level
             // 
@@ -193,21 +201,13 @@
             // 
             this.btngualdar.Image = ((System.Drawing.Image)(resources.GetObject("btngualdar.Image")));
             this.btngualdar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btngualdar.Location = new System.Drawing.Point(67, 152);
+            this.btngualdar.Location = new System.Drawing.Point(283, 220);
             this.btngualdar.Name = "btngualdar";
             this.btngualdar.Size = new System.Drawing.Size(113, 52);
             this.btngualdar.TabIndex = 174;
             this.btngualdar.Text = "Guardar";
             this.btngualdar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btngualdar.UseVisualStyleBackColor = true;
-            // 
-            // txtidcargo
-            // 
-            this.txtidcargo.Location = new System.Drawing.Point(494, 95);
-            this.txtidcargo.MaxLength = 10;
-            this.txtidcargo.Name = "txtidcargo";
-            this.txtidcargo.Size = new System.Drawing.Size(219, 20);
-            this.txtidcargo.TabIndex = 179;
             // 
             // Empleado
             // 
