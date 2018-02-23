@@ -100,20 +100,24 @@
     <Compile Include="equipos.Designer.cs">
       <DependentUpon>equipos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="movimientoequipos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="movimientoequipos.Designer.cs">
       <DependentUpon>movimientoequipos.cs</DependentUpon>
     </Compile>
-    <Compile Include="participa.cs" />
     <Compile Include="participantes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="participantes.Designer.cs">
       <DependentUpon>participantes.cs</DependentUpon>
     </Compile>
-    <Compile Include="participatesql.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +126,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usuarios.Designer.cs">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Consulta Empledados.resx">
       <DependentUpon>Consulta Empledados.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="equipos.resx">
       <DependentUpon>equipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="movimientoequipos.resx">
       <DependentUpon>movimientoequipos.cs</DependentUpon>
@@ -156,6 +169,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="usuarios.resx">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

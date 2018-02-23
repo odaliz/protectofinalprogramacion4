@@ -23,7 +23,7 @@ namespace UCSystem
             DialogResult Result = MessageBox.Show("Seguro que desea salir del sistema", "Saliendo del sistema - UCSystem", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (Result == DialogResult.OK)
             {
-                this.Close();
+                Application.Exit();
             }
         }
 

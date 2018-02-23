@@ -16,7 +16,7 @@ namespace UCSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new movimientoequipos());
+            Application.Run(new usuarios());
         }
     }
 }
