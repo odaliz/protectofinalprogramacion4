@@ -72,7 +72,7 @@
             this.tbclaveusuario.Location = new System.Drawing.Point(71, 41);
             this.tbclaveusuario.Name = "tbclaveusuario";
             this.tbclaveusuario.PasswordChar = '*';
-            this.tbclaveusuario.Size = new System.Drawing.Size(100, 20);
+            this.tbclaveusuario.Size = new System.Drawing.Size(121, 20);
             this.tbclaveusuario.TabIndex = 3;
             // 
             // btnentrar

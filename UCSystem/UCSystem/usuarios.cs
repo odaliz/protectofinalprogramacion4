@@ -26,16 +26,43 @@ namespace UCSystem
             SqlDataAdapter db = new SqlDataAdapter(consulta, con);
             DataSet ds = new DataSet();
             ds.Reset();
-            db.Fill(ds);
+            db.Fill(ds,"empleados");
             string codigos = ds.Tables[0].Rows[0][0].ToString();
-            cbcodempleado.Text = codigos;
+            cbcodempleado.DataSource = ds.Tables[0].DefaultView;
+            cbcodempleado.ValueMember = "codigoempleado";
             string consulta2 = "SELECT tipousuario FROM tiposusuarios;";
             SqlDataAdapter db2 = new SqlDataAdapter(consulta2, con);
             DataSet ds2 = new DataSet();
             ds2.Reset();
-            db2.Fill(ds2);
-            string tiposusua = ds2.Tables[0].Rows[0][0].ToString();
-            cbtiposusuarios.Text = tiposusua;
+            db2.Fill(ds2,"tiposusuarios");
+            cbtiposusuarios.DataSource = ds2.Tables[0].DefaultView;
+            cbtiposusuarios.ValueMember = "tipousuario";
+        }
+
+        private void btnguardarusuario_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
+            con.Open();
+            string tipo = "SELECT idtipousuario FROM tiposusuarios WHERE tipousuario = '" + cbtiposusuarios.Text + "';";
+            SqlDataAdapter db = new SqlDataAdapter(tipo, con);
+            DataSet ds = new DataSet();
+            ds.Reset();
+            db.Fill(ds, "tiposusuarios");
+            string idtipo = ds.Tables[0].Rows[0][0].ToString();
+            string insertar = ("INSERT INTO loginusuario (codigoempleado, usuario, idtipousuario, clave, idestado) VALUES (" + Convert.ToInt16(cbcodempleado.Text) + ", '" + tbusuario.Text + "'," + Convert.ToInt16(idtipo) + ",'" + tbclave.Text + "',1)");
+            SqlCommand command = new SqlCommand(insertar, con);
+            command.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Datos guardados exitosamente", "Aviso!");
+            cbcodempleado.Text = "";
+            cbtiposusuarios.Text = "";
+            tbclave.Text = "";
+            tbusuario.Text = "";
+        }
+
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

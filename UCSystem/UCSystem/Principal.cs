@@ -54,7 +54,8 @@ namespace UCSystem
 
         private void movimientosEquiposToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            movimientoequipos frm = new movimientoequipos();
+            frm.Show();
         }
 
         private void equiposToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -72,6 +73,18 @@ namespace UCSystem
         private void Principal_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            usuarios frm = new usuarios();
+            frm.ShowDialog();
+        }
+
+        private void inventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            inventario frm = new inventario();
+            frm.Show();
         }
     }
 }
