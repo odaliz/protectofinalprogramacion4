@@ -76,21 +76,23 @@
             // 
             this.participantesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("participantesToolStripMenuItem.Image")));
             this.participantesToolStripMenuItem.Name = "participantesToolStripMenuItem";
-            this.participantesToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.participantesToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.participantesToolStripMenuItem.Text = "Participantes";
             this.participantesToolStripMenuItem.Click += new System.EventHandler(this.participantesToolStripMenuItem_Click);
             // 
             // equiposToolStripMenuItem
             // 
+            this.equiposToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("equiposToolStripMenuItem.Image")));
             this.equiposToolStripMenuItem.Name = "equiposToolStripMenuItem";
-            this.equiposToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.equiposToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.equiposToolStripMenuItem.Text = "Equipos";
             this.equiposToolStripMenuItem.Click += new System.EventHandler(this.equiposToolStripMenuItem_Click);
             // 
             // empleadosToolStripMenuItem
             // 
+            this.empleadosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("empleadosToolStripMenuItem.Image")));
             this.empleadosToolStripMenuItem.Name = "empleadosToolStripMenuItem";
-            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
+            this.empleadosToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.empleadosToolStripMenuItem.Text = "Empleados";
             this.empleadosToolStripMenuItem.Click += new System.EventHandler(this.empleadosToolStripMenuItem_Click);
             // 
@@ -105,15 +107,17 @@
             // 
             // movimientosEquiposToolStripMenuItem
             // 
+            this.movimientosEquiposToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("movimientosEquiposToolStripMenuItem.Image")));
             this.movimientosEquiposToolStripMenuItem.Name = "movimientosEquiposToolStripMenuItem";
-            this.movimientosEquiposToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.movimientosEquiposToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
             this.movimientosEquiposToolStripMenuItem.Text = "Movimientos equipos";
             this.movimientosEquiposToolStripMenuItem.Click += new System.EventHandler(this.movimientosEquiposToolStripMenuItem_Click);
             // 
             // inventarioToolStripMenuItem
             // 
+            this.inventarioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("inventarioToolStripMenuItem.Image")));
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
-            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
             this.inventarioToolStripMenuItem.Text = "Inventario";
             this.inventarioToolStripMenuItem.Click += new System.EventHandler(this.inventarioToolStripMenuItem_Click);
             // 
@@ -129,22 +133,25 @@
             // 
             // participantesToolStripMenuItem1
             // 
+            this.participantesToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("participantesToolStripMenuItem1.Image")));
             this.participantesToolStripMenuItem1.Name = "participantesToolStripMenuItem1";
-            this.participantesToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.participantesToolStripMenuItem1.Size = new System.Drawing.Size(156, 26);
             this.participantesToolStripMenuItem1.Text = "Participantes";
             this.participantesToolStripMenuItem1.Click += new System.EventHandler(this.participantesToolStripMenuItem1_Click);
             // 
             // equiposToolStripMenuItem1
             // 
+            this.equiposToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("equiposToolStripMenuItem1.Image")));
             this.equiposToolStripMenuItem1.Name = "equiposToolStripMenuItem1";
-            this.equiposToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.equiposToolStripMenuItem1.Size = new System.Drawing.Size(156, 26);
             this.equiposToolStripMenuItem1.Text = "Equipos";
             this.equiposToolStripMenuItem1.Click += new System.EventHandler(this.equiposToolStripMenuItem1_Click);
             // 
             // empleadosToolStripMenuItem1
             // 
+            this.empleadosToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("empleadosToolStripMenuItem1.Image")));
             this.empleadosToolStripMenuItem1.Name = "empleadosToolStripMenuItem1";
-            this.empleadosToolStripMenuItem1.Size = new System.Drawing.Size(142, 22);
+            this.empleadosToolStripMenuItem1.Size = new System.Drawing.Size(156, 26);
             this.empleadosToolStripMenuItem1.Text = "Empleados";
             this.empleadosToolStripMenuItem1.Click += new System.EventHandler(this.empleadosToolStripMenuItem1_Click);
             // 
@@ -158,8 +165,9 @@
             // 
             // usuariosToolStripMenuItem
             // 
+            this.usuariosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("usuariosToolStripMenuItem.Image")));
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(156, 26);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
@@ -180,6 +188,7 @@
             this.ClientSize = new System.Drawing.Size(550, 386);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;

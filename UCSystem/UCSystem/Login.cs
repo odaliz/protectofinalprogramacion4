@@ -44,7 +44,7 @@ namespace UCSystem
             if (clave == tbclaveusuario.Text)
             {
                 Principal frm = new Principal();
-                frm.Show();
+                frm.ShowDialog();
             }
             else
             {

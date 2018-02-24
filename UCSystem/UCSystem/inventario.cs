@@ -13,6 +13,7 @@ namespace UCSystem
 {
     public partial class inventario : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
         public inventario()
         {
             InitializeComponent();
@@ -20,7 +21,6 @@ namespace UCSystem
 
         private void tsbNuevo_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
             con.Open();
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter("SELECT descripcionestado FROM estados ORDER BY descripcionestado", con);
@@ -42,7 +42,6 @@ namespace UCSystem
 
         private void tsbGuardar_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
             con.Open();
             string estados = "SELECT idestado FROM estados WHERE descripcionestado = '" + cbEstado.Text + "';";
             SqlDataAdapter db = new SqlDataAdapter(estados, con);
@@ -86,7 +85,6 @@ namespace UCSystem
         {
             try
             {
-                SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
                 con.Open();
                 if (tsbcampobuscar.Text == "")
                 {

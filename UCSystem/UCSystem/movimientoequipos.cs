@@ -13,13 +13,13 @@ namespace UCSystem
 {
     public partial class movimientoequipos : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
         public movimientoequipos()
         {
             InitializeComponent();
         }
         private void tsbGuardar_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
+        { 
             con.Open();
             string consulta = "SELECT idestado FROM estados WHERE descripcionestado = '" + cbEstado.Text + "';";
             SqlDataAdapter db = new SqlDataAdapter(consulta, con);
@@ -61,7 +61,6 @@ namespace UCSystem
         {
             try
             {
-                SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
                 con.Open();
                 if (tsbcampobuscar.Text == "")
                 {
@@ -104,7 +103,6 @@ namespace UCSystem
 
         private void tsbNuevo_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
             con.Open();
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter("SELECT descripcionestado FROM estados ORDER BY descripcionestado ", con);
@@ -125,6 +123,12 @@ namespace UCSystem
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            con.Open();
+            DataSet ds = new DataSet();
+            SqlDataAdapter da = new SqlDataAdapter("SELECT descripcionestado FROM estados ORDER BY descripcionestado ", con);
+            da.Fill(ds, "descripcionestado");
+            cbEstado.DataSource = ds.Tables[0].DefaultView;
+            cbEstado.ValueMember = "descripcionestado";
             tbMatricula.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             tbSerieequipo.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
             cbEstado.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();

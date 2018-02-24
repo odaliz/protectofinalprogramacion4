@@ -13,6 +13,7 @@ namespace UCSystem
 {
     public partial class usuarios : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
         public usuarios()
         {
             InitializeComponent();
@@ -20,7 +21,6 @@ namespace UCSystem
 
         private void usuarios_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
             con.Open();
             string consulta = "SELECT codigoempleado FROM empleados;";
             SqlDataAdapter db = new SqlDataAdapter(consulta, con);
@@ -41,7 +41,6 @@ namespace UCSystem
 
         private void btnguardarusuario_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
             con.Open();
             string tipo = "SELECT idtipousuario FROM tiposusuarios WHERE tipousuario = '" + cbtiposusuarios.Text + "';";
             SqlDataAdapter db = new SqlDataAdapter(tipo, con);
