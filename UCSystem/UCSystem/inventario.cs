@@ -33,7 +33,7 @@ namespace UCSystem
             da2.Fill(ds2, "descripcionequipo");
             cbdescripequipos.DataSource = ds2.Tables[0].DefaultView;
             cbdescripequipos.ValueMember = "descripcionequipo";
-
+            con.Close();
             tbSerieequipo.Enabled = true;
             cbEstado.Enabled = true;
             cbdescripequipos.Enabled = true;

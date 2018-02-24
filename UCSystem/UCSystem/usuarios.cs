@@ -37,6 +37,7 @@ namespace UCSystem
             db2.Fill(ds2,"tiposusuarios");
             cbtiposusuarios.DataSource = ds2.Tables[0].DefaultView;
             cbtiposusuarios.ValueMember = "tipousuario";
+            con.Close();
         }
 
         private void btnguardarusuario_Click(object sender, EventArgs e)

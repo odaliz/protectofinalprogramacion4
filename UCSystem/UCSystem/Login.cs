@@ -13,6 +13,7 @@ namespace UCSystem
 {
     public partial class Login : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
         public Login()
         {
             InitializeComponent();
@@ -20,7 +21,6 @@ namespace UCSystem
 
         private void Login_Load(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
             con.Open();
             string consulta = "SELECT usuario FROM loginusuario WHERE idestado = 1;";
             SqlDataAdapter db = new SqlDataAdapter(consulta, con);
@@ -29,11 +29,11 @@ namespace UCSystem
             db.Fill(ds);
             string usuarios = ds.Tables[0].Rows[0][0].ToString();
             cbusuario.Text = usuarios;
+            con.Close();
         }
 
         private void btnentrar_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
             con.Open();
             string consulta = "SELECT clave FROM loginusuario WHERE usuario = '" + cbusuario.Text + "';";
             SqlDataAdapter db = new SqlDataAdapter(consulta, con);
@@ -45,10 +45,12 @@ namespace UCSystem
             {
                 Principal frm = new Principal();
                 frm.ShowDialog();
+                con.Close();
             }
             else
             {
                 MessageBox.Show("Clave o usuario incorrecto", "Aviso!");
+                con.Close();
             }
         }
 

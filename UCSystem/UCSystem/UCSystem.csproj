@@ -68,7 +68,6 @@
     <Compile Include="claEquipos.cs" />
     <Compile Include="claMovimientos.cs" />
     <Compile Include="claseequipo.cs" />
-    <Compile Include="conexionsql.cs" />
     <Compile Include="Consulta Empledados.cs">
       <SubType>Form</SubType>
     </Compile>

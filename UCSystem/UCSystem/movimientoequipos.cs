@@ -114,6 +114,7 @@ namespace UCSystem
             tbSerieequipo.Enabled = true;
             cbEstado.Enabled = true;
             tsbGuardar.Enabled = true;
+            con.Close();
         }
 
         private void movimientoequipos_Load(object sender, EventArgs e)

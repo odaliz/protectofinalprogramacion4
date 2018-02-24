@@ -62,6 +62,7 @@ namespace UCSystem
             string codigos = ds.Tables[0].Rows[0][0].ToString();
             cbcargo.DataSource = ds.Tables[0].DefaultView;
             cbcargo.ValueMember = "descripcioncargo";
+            con.Close();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
