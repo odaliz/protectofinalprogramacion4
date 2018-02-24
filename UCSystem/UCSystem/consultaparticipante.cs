@@ -27,6 +27,7 @@ namespace UCSystem
             par.txtapellidop.Text = rellenar.Cells["apellidos"].Value.ToString();
             par.txtcedulap.Text = rellenar.Cells["cedula"].Value.ToString();
             par.txtdireccionp.Text = rellenar.Cells["direccion"].Value.ToString();
+            par.txtmatriculap.Enabled = false;
             par.Show();
         }
 
@@ -39,6 +40,7 @@ namespace UCSystem
             SqlDataAdapter da = new SqlDataAdapter(sql, con);
             da.Fill(dtret);
             dvparticipantes.DataSource = dtret;
+
             con.Close();
         }
 

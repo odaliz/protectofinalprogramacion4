@@ -136,6 +136,7 @@ namespace UCSystem
             tbFecha.Enabled = true;
             cbEstado.Enabled = true;
             tsbGuardar.Enabled = true;
+            con.Close();
         }
     }
 }

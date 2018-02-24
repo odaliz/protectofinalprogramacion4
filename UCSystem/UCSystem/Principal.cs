@@ -13,11 +13,13 @@ namespace UCSystem
 {
     public partial class Principal : Form
     {
+        SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-TP6EBH6\SQLEXPRESS01;Initial Catalog=UCSystem_SQLServer;Integrated Security=True;");
         public Principal()
         {
             InitializeComponent();
         }
 
+        public string tipousuario;
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult Result = MessageBox.Show("Seguro que desea salir del sistema", "Saliendo del sistema - UCSystem", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -72,7 +74,6 @@ namespace UCSystem
 
         private void Principal_Load(object sender, EventArgs e)
         {
-
         }
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
